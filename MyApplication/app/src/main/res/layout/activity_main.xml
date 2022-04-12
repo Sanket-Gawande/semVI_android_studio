@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20sp">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500" />
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25sp"
+        android:layout_toEndOf="@id/button1"
+        android:background="@color/purple_500" />
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:layout_marginTop="20sp"
+        android:background="@color/purple_500" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_500"
+        android:text="@string/login"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/loginbtn"
+        android:layout_marginBottom="20sp"
+        android:text="@string/user"
+        android:textColor="@color/purple_500"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/user"
+        android:layout_toEndOf="@id/user"
+
+        android:hint="@string/user_name" />
+</RelativeLayout>

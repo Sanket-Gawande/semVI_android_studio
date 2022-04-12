@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Restraurant</string>
+    <string name="rahul_s_restraurent">Rahul\'s restraurent services</string>
+    <string name="select_restraurant">Select restraurant :</string>
+    <string name="rahuls_meal">Rahuls meal</string>
+    <string name="panu_food_court">Panu food court</string>
+    <string name="red_chilli">Red chilli</string>
+    <string name="select_cousin">Select cousin</string>
+    <string name="maharashtrian">Maharashtrian</string>
+    <string name="south_indian">South Indian</string>
+    <string name="gujarati_thali">Gujarati thali</string>
+    <string name="paneer_mumtaj">Paneer Mumtaj</string>
+    <string name="place_order">Place order</string>
+
+
+</resources>

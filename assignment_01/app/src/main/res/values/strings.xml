@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">assignment_01</string>
+    <string name="row_01">Row_01</string>
+    <string name="row_02_01">row_02_01</string>
+    <string name="row_02_02">row_02_02</string>
+    <string name="row_03">row_03</string>
+
+</resources>

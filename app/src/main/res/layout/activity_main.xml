@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20sp">
+
+        <!--    main heading-->
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="20sp"
+            android:background="@color/purple_500"
+            android:padding="10sp"
+            android:text="@string/rahul_s_restraurent"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <!--    table layout for form-->
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading">
+            <!--row for choosing res-->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/nameofres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_restraurant"
+                    android:textColor="@color/purple_500"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20sp"
+                        android:text="@string/rahuls_meal" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20sp"
+                        android:text="@string/panu_food_court" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20sp"
+                        android:text="@string/red_chilli" />
+
+                </RadioGroup>
+            </TableRow>
+            <!--        row for selecting cousin-->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_cousin"
+                    android:textColor="@color/purple_500"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20sp"
+                        android:text="@string/maharashtrian" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20sp"
+                        android:text="@string/south_indian" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20sp"
+                        android:text="@string/gujarati_thali" />
+                </RadioGroup>
+
+            </TableRow>
+            <!--row for selecting dish-->
+
+            <TableRow
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select dish"
+                    android:textColor="@color/purple_500"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20sp"
+                        android:text="@string/paneer_mumtaj" />
+                </RadioGroup>
+            </TableRow>
+            <!--row to pick date of order-->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book on : "
+                    android:textColor="@color/purple_500"
+                    android:textSize="20sp" />
+
+                <!--            <DatePicker-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="fill_parent"-->
+                <!--                android:layout_marginTop="20sp" />-->
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="date" />
+            </TableRow>
+
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/order_btn"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/table"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="25sp"
+            android:text="@string/place_order" />
+
+    </RelativeLayout>
+</LinearLayout>
